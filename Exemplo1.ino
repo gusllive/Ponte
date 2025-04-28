@@ -1,4 +1,8 @@
-//Exemplo 1
+// Exemplo 1
+// Mude a entrada analógica para A1
+// Aumente 1 no divisor
+// Comece o multiplicador em 3.5
+// Comece a taxa de comparação em 90, variando de 110 em 110
 void setup() {
   Serial.begin(9600);
 }
