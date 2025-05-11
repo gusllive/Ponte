@@ -1,4 +1,5 @@
 #include <GyverMAX6675.h>
+bool mensagemDesligado = false;  // nova variável de controle
 
 // Pinos do sensor ultrassônico
 float trig = 2.0;
@@ -41,7 +42,9 @@ void loop() {
     validReadings = 0;
     acumula = 0.0;
     previousDuration = 0.0;
-    while (validReadings < 5.0) {
+    mensagemDesligado = false;
+    
+    while (validReadings < 5.0) { //exemplo usando while
       digitalWrite((int)trig, LOW);
       delayMicroseconds(2);
       digitalWrite((int)trig, HIGH);
@@ -69,7 +72,7 @@ void loop() {
     float tempAtual = 0.0;
     float tempAnterior = 0.0;
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) { //exemplo usando o for
       if (sens.readTemp()) {
         tempAtual = sens.getTemp() - 1.0;  // Correção
         if (tempAnterior == 0.0 || tempAtual <= tempAnterior * 1.2) {
@@ -93,7 +96,10 @@ void loop() {
     delay(1000);
 
   } else {
-    Serial.println("Sistema Desligado");
+       if (!mensagemDesligado) {
+        Serial.println("Sistema Desligado");
+        mensagemDesligado = true;
+    }
   }
 
   delay(100);
