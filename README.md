@@ -6,7 +6,6 @@ Hello! Welcome to our Ponte lab, we develop new technologies in the chemistry en
 # Present Studies:
 
 1_ Reator Paçoquita 
-2_ DeltaMat
 
 Fell free to send me some email if u need some help: gustavo.nascimento@discentes.fat.uerj.br
 
