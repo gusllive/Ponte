@@ -1,0 +1,5 @@
+O app termoapp é um aplicativo de resolução de exercícios do livro Introdução à Termodinâmica da Engenharia Química 
+de J.M.Smith, sétima edição com banco de dados pickle, backend em python e frontend em flutter. 
+
+A primeira versão do aplicativo é referente ao exemplo 3.10 da página 98 do livro texto com anotações da aula 
+referente ao exercício de Alexandre Torres. 
